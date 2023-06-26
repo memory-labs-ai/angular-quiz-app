@@ -1,0 +1,6 @@
+<h2>Quizzes</h2>
+<div ng-repeat="quiz in quizzes">
+  <h4>{{quiz.title}}</h4>
+  <p>{{quiz.questions.length}} questions</p>
+  <a href="#!/quiz/{{quiz.id}}">Start Quiz</a>
+</div>

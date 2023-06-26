@@ -1,0 +1,9 @@
+<h2>{{quiz.title}}</h2>
+<div ng-show="!finished">
+  <h4>{{currentQuestion.question}}</h4>
+  <button ng-repeat="option in currentQuestion.options" ng-click="submitAnswer(option)">{{option}}</button>
+</div>
+<div ng-show="finished">
+  <h4>Quiz finished!</h4>
+  <a href="#!/results/{{quiz.id}}">See results</a>
+</div>

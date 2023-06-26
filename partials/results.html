@@ -1,0 +1,7 @@
+<h2>Results for {{quiz.title}}</h2>
+<div ng-repeat="result in results">
+  <h4>{{result.question.question}}</h4>
+  <p>Your answer: {{result.answer}}</p>
+  <p>Correct answer: {{result.question.answer}}</p>
+</div>
+<a href="#!/quizzes">Back to quizzes</a>
